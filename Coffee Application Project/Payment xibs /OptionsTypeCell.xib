@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="133" id="KGk-i7-Jjw" customClass="OptionsTypeCell" customModule="Coffee_Application_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="133"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SdE-Ip-Vuh">
+                        <rect key="frame" x="10" y="10" width="300" height="113"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State Bank of India" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGg-ru-gYG">
+                                <rect key="frame" x="40" y="10" width="210" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NKk-bk-gfl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sbi" translatesAutoresizingMaskIntoConstraints="NO" id="Goq-fk-L2R">
+                                <rect key="frame" x="250" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="BW0-6k-jxx"/>
+                                    <constraint firstAttribute="height" constant="50" id="gFK-wA-Izn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6d-J9-eZC">
+                                <rect key="frame" x="40" y="60" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="krE-6C-fEL"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pay $500">
+                                    <backgroundConfiguration key="background" cornerRadius="4">
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D6d-J9-eZC" firstAttribute="leading" secondItem="SdE-Ip-Vuh" secondAttribute="leading" constant="40" id="E3X-0M-yIZ"/>
+                            <constraint firstItem="D6d-J9-eZC" firstAttribute="top" secondItem="Goq-fk-L2R" secondAttribute="bottom" constant="10" id="LQd-XK-Oxc"/>
+                            <constraint firstItem="Goq-fk-L2R" firstAttribute="top" secondItem="SdE-Ip-Vuh" secondAttribute="top" id="T9F-7f-jZC"/>
+                            <constraint firstItem="Goq-fk-L2R" firstAttribute="leading" secondItem="QGg-ru-gYG" secondAttribute="trailing" id="gNP-ku-TPV"/>
+                            <constraint firstItem="QGg-ru-gYG" firstAttribute="leading" secondItem="SdE-Ip-Vuh" secondAttribute="leading" constant="40" id="lbx-Y9-yGE"/>
+                            <constraint firstItem="QGg-ru-gYG" firstAttribute="top" secondItem="SdE-Ip-Vuh" secondAttribute="top" constant="10" id="tpU-gg-oQn"/>
+                            <constraint firstAttribute="trailing" secondItem="Goq-fk-L2R" secondAttribute="trailing" id="uWD-P6-aZo"/>
+                            <constraint firstAttribute="trailing" secondItem="D6d-J9-eZC" secondAttribute="trailing" constant="10" id="uXs-jM-0hk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.92000000000000004" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="SdE-Ip-Vuh" secondAttribute="bottom" constant="10" id="32k-au-Yrh"/>
+                    <constraint firstAttribute="trailing" secondItem="SdE-Ip-Vuh" secondAttribute="trailing" constant="10" id="VYw-mq-2sd"/>
+                    <constraint firstItem="SdE-Ip-Vuh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ea8-Gb-e9C"/>
+                    <constraint firstItem="SdE-Ip-Vuh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="hP8-vU-UVP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bankname" destination="QGg-ru-gYG" id="mC7-aV-pav"/>
+                <outlet property="btnPay" destination="D6d-J9-eZC" id="r7c-UN-kjt"/>
+                <outlet property="logo" destination="Goq-fk-L2R" id="15S-en-u06"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="51.760563380281695"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sbi" width="500" height="281"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

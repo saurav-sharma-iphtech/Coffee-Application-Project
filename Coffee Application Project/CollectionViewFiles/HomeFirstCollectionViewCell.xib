@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeFirstCollectionViewCell" customModule="Coffee_Application_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="123"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="123"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngY-Xa-0GD">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="123"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="last" translatesAutoresizingMaskIntoConstraints="NO" id="5Xt-Sx-gyx">
+                                <rect key="frame" x="5" y="5" width="290" height="113"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Xt-Sx-gyx" firstAttribute="leading" secondItem="ngY-Xa-0GD" secondAttribute="leading" constant="5" id="5b1-db-HWQ"/>
+                            <constraint firstAttribute="trailing" secondItem="5Xt-Sx-gyx" secondAttribute="trailing" constant="5" id="OW5-ud-PpL"/>
+                            <constraint firstItem="5Xt-Sx-gyx" firstAttribute="top" secondItem="ngY-Xa-0GD" secondAttribute="top" constant="5" id="cgW-fV-w2v"/>
+                            <constraint firstAttribute="bottom" secondItem="5Xt-Sx-gyx" secondAttribute="bottom" constant="5" id="f4o-YE-w0Y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.93725490570000003" green="0.93725496529999996" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ngY-Xa-0GD" secondAttribute="bottom" id="LOl-zw-Hnv"/>
+                <constraint firstAttribute="trailing" secondItem="ngY-Xa-0GD" secondAttribute="trailing" id="bqE-Bv-aeL"/>
+                <constraint firstItem="ngY-Xa-0GD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fyp-yl-fEO"/>
+                <constraint firstItem="ngY-Xa-0GD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="n0o-7Z-Q8q"/>
+            </constraints>
+            <size key="customSize" width="300" height="123"/>
+            <connections>
+                <outlet property="sliderImg" destination="5Xt-Sx-gyx" id="UEy-f5-mPO"/>
+            </connections>
+            <point key="canvasLocation" x="253.43511450381678" y="-0.35211267605633806"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="last" width="1280" height="720"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

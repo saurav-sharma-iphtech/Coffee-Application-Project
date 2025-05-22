@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="PaymentOptionCell" customModule="Coffee_Application_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dcx-z9-sVS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlF-hQ-87e">
+                                <rect key="frame" x="70" y="5" width="220" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="DTe-uy-Pyb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K4i-ah-d8v">
+                                <rect key="frame" x="10" y="10" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="S6b-8Y-86k"/>
+                                    <constraint firstAttribute="height" constant="30" id="eK0-T2-3F5"/>
+                                </constraints>
+                                <imageReference key="image" image="upi" renderingMode="hierarchical-single">
+                                    <hierarchicalColors>
+                                        <color systemColor="labelColor"/>
+                                        <color systemColor="secondaryLabelColor"/>
+                                        <color systemColor="tertiaryLabelColor"/>
+                                    </hierarchicalColors>
+                                </imageReference>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay by any UPI app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxc-L8-LPC">
+                                <rect key="frame" x="70" y="33" width="220" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="9UL-7l-mNz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mxc-L8-LPC" firstAttribute="top" secondItem="zlF-hQ-87e" secondAttribute="bottom" id="6Hb-Dd-Ybc"/>
+                            <constraint firstItem="mxc-L8-LPC" firstAttribute="leading" secondItem="Dcx-z9-sVS" secondAttribute="leading" constant="70" id="P2O-uR-I8j"/>
+                            <constraint firstAttribute="trailing" secondItem="mxc-L8-LPC" secondAttribute="trailing" constant="30" id="U04-DQ-D5y"/>
+                            <constraint firstItem="zlF-hQ-87e" firstAttribute="leading" secondItem="K4i-ah-d8v" secondAttribute="trailing" constant="10" id="XVH-Eh-GXX"/>
+                            <constraint firstItem="zlF-hQ-87e" firstAttribute="top" secondItem="Dcx-z9-sVS" secondAttribute="top" constant="5" id="dtI-JB-ucw"/>
+                            <constraint firstAttribute="trailing" secondItem="zlF-hQ-87e" secondAttribute="trailing" constant="30" id="fxj-lG-9Hq"/>
+                            <constraint firstItem="K4i-ah-d8v" firstAttribute="top" secondItem="Dcx-z9-sVS" secondAttribute="top" constant="10" id="rFo-VL-WGg"/>
+                            <constraint firstItem="K4i-ah-d8v" firstAttribute="leading" secondItem="Dcx-z9-sVS" secondAttribute="leading" constant="10" id="snG-t9-41W"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Dcx-z9-sVS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KTM-aK-6yD"/>
+                    <constraint firstAttribute="bottom" secondItem="Dcx-z9-sVS" secondAttribute="bottom" id="Srf-Br-Son"/>
+                    <constraint firstAttribute="trailing" secondItem="Dcx-z9-sVS" secondAttribute="trailing" id="fAc-hW-iya"/>
+                    <constraint firstItem="Dcx-z9-sVS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="l6D-0S-OMA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cardimg" destination="K4i-ah-d8v" id="4W4-30-5eH"/>
+                <outlet property="paymenttypename" destination="zlF-hQ-87e" id="W8Z-yV-Xfg"/>
+            </connections>
+            <point key="canvasLocation" x="68.702290076335871" y="35.563380281690144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="upi" width="256" height="256"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

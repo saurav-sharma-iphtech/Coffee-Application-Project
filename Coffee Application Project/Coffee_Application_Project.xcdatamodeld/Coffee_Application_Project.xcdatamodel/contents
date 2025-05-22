@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="21H1320" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CartDetails" representedClassName="CartDetails" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="String"/>
+        <attribute name="coffeeName" optional="YES" attributeType="String"/>
+        <attribute name="cupSize" optional="YES" attributeType="String"/>
+        <attribute name="itemCount" optional="YES" attributeType="String"/>
+        <attribute name="realPrice" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="OrdersPrice" representedClassName="OrdersPrice" syncable="YES">
+        <attribute name="deliveryCharge" optional="YES" attributeType="String"/>
+        <attribute name="subTotal" optional="YES" attributeType="String"/>
+        <attribute name="taxAmount" optional="YES" attributeType="String"/>
+        <attribute name="totalAmount" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="UserAddress" representedClassName="UserAddress" syncable="YES">
+        <attribute name="area" optional="YES" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="fullname" optional="YES" attributeType="String"/>
+        <attribute name="houseno" optional="YES" attributeType="String"/>
+        <attribute name="landmark" optional="YES" attributeType="String"/>
+        <attribute name="mobno" optional="YES" attributeType="String"/>
+        <attribute name="pincode" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+    </entity>
+</model>
