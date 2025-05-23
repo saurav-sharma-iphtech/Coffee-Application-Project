@@ -176,9 +176,13 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
                 
                 switch subviewType {
                 case .upi:
-                    return tableView.dequeueReusableCell(withIdentifier: "UpiXibss", for: indexPath)
+                    let cell =  tableView.dequeueReusableCell(withIdentifier: "UpiXibss", for: indexPath) as? UpiXibss
+                    cell?.btnPrice.setTitle(totalAmountlbl.text, for: .normal)
+                    return cell!
                 case .card:
-                    return tableView.dequeueReusableCell(withIdentifier: "cardxibs", for: indexPath)
+                    let cell = tableView.dequeueReusableCell(withIdentifier: "cardxibs", for: indexPath) as? cardxibs
+                    cell?.btnprice.setTitle(totalAmountlbl.text, for: .normal)
+                    return cell!
                 case .bankOptions:
                     let cell = tableView.dequeueReusableCell(withIdentifier: "OptionsTypeCell", for: indexPath) as! OptionsTypeCell
                     
@@ -188,16 +192,21 @@ extension PaymentVC: UITableViewDelegate, UITableViewDataSource {
                         let bank = indianBankNames[bankIndex]
                         cell.bankname.text = bank["name"]
                         cell.logo.image = UIImage(named: bank["imgname"] ?? "")
+                        cell.btnPay.setTitle(totalAmountlbl.text, for: .normal)
                     }
                     return cell
                 case .cod:
-                    return tableView.dequeueReusableCell(withIdentifier: "QrandCashOnDeliveryXibs", for: indexPath)
+                    let cell = tableView.dequeueReusableCell(withIdentifier: "QrandCashOnDeliveryXibs", for: indexPath) as? QrandCashOnDeliveryXibs
+                    cell?.btnPrice.setTitle(totalAmountlbl.text, for: .normal)
+                    return cell!
                 case .qr:
                     let cell = tableView.dequeueReusableCell(withIdentifier: "QrandCashOnDeliveryXibs", for: indexPath) as? QrandCashOnDeliveryXibs
                     cell?.titlelbl.text = "Pay By QR Code"
+                    cell?.btnPrice.setTitle(totalAmountlbl.text, for: .normal)
                     return cell!
                 }
-            } else {
+            }
+            else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "PaymentOptionCell", for: indexPath) as! PaymentOptionCell
                 let paymentIndex = paymentsType(for: indexPath)
                 if paymentIndex >= 0 && paymentIndex < arrPaymentType.count {

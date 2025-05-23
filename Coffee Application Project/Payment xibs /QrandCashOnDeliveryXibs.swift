@@ -9,6 +9,9 @@ import UIKit
 
 class QrandCashOnDeliveryXibs: UITableViewCell {
     @IBOutlet weak var titlelbl: UILabel!
+    
+    
+    @IBOutlet weak var btnPrice: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

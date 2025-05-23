@@ -102,6 +102,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnPrice" destination="LKa-59-tSH" id="DyP-ua-yLu"/>
+            </connections>
             <point key="canvasLocation" x="138.93129770992365" y="80.281690140845072"/>
         </tableViewCell>
     </objects>

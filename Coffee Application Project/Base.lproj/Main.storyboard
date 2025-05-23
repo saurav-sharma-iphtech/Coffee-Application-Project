@@ -540,8 +540,21 @@
                                             <action selector="VerifyBtn:" destination="qIm-6k-9Bi" eventType="touchUpInside" id="OpQ-Lv-yQc"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Otp Is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5S-h8-KDr">
+                                        <rect key="frame" x="20" y="656" width="353" height="35"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="30r-g5-YQe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="D5S-h8-KDr" firstAttribute="leading" secondItem="HZE-NM-OFW" secondAttribute="leading" constant="20" id="8B3-kV-i9K"/>
+                                    <constraint firstAttribute="trailing" secondItem="D5S-h8-KDr" secondAttribute="trailing" constant="20" id="8nf-ad-eQS"/>
                                     <constraint firstItem="cnP-sC-d5v" firstAttribute="leading" secondItem="yxE-zS-tjn" secondAttribute="trailing" constant="20" id="Az7-rL-Nbm"/>
                                     <constraint firstItem="yxE-zS-tjn" firstAttribute="top" secondItem="73h-RV-Nbi" secondAttribute="bottom" constant="58" id="C6o-Ac-QGj"/>
                                     <constraint firstAttribute="trailing" secondItem="JVw-dN-nJ4" secondAttribute="trailing" constant="20" id="CqC-P0-BTb"/>
@@ -557,6 +570,7 @@
                                     <constraint firstItem="ENE-1P-49p" firstAttribute="top" secondItem="11m-0N-cbp" secondAttribute="bottom" constant="163" id="TAs-nt-BV9"/>
                                     <constraint firstAttribute="trailing" secondItem="ENE-1P-49p" secondAttribute="trailing" constant="20" id="VOV-Qc-aGJ"/>
                                     <constraint firstItem="Klq-o1-mfh" firstAttribute="top" secondItem="hqH-YK-qmQ" secondAttribute="bottom" constant="35" id="abo-9x-uOy"/>
+                                    <constraint firstItem="D5S-h8-KDr" firstAttribute="top" secondItem="11m-0N-cbp" secondAttribute="bottom" constant="82" id="b5y-gP-R4D"/>
                                     <constraint firstAttribute="trailing" secondItem="90Z-Ea-Yy2" secondAttribute="trailing" constant="20" id="cyc-w8-vfA"/>
                                     <constraint firstItem="cnP-sC-d5v" firstAttribute="top" secondItem="73h-RV-Nbi" secondAttribute="bottom" constant="58" id="e1g-pA-rXr"/>
                                     <constraint firstItem="73h-RV-Nbi" firstAttribute="leading" secondItem="HZE-NM-OFW" secondAttribute="leading" constant="20" id="flC-Lc-v3E"/>
@@ -586,6 +600,7 @@
                         <outlet property="OTPTxt2" destination="yxE-zS-tjn" id="sV2-Wr-9Ke"/>
                         <outlet property="OTPTxt3" destination="cnP-sC-d5v" id="Nzt-eA-y9q"/>
                         <outlet property="OTPTxt4" destination="90Z-Ea-Yy2" id="Bwn-Ym-3sU"/>
+                        <outlet property="otpLbl" destination="D5S-h8-KDr" id="ziH-Ci-wCS"/>
                         <outlet property="phoneNolbl" destination="73h-RV-Nbi" id="lNi-zT-nJE"/>
                     </connections>
                 </viewController>
@@ -1688,7 +1703,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fpj-kp-KSP">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h" translatesAutoresizingMaskIntoConstraints="NO" id="7Hr-bT-jsw">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h" translatesAutoresizingMaskIntoConstraints="NO" id="7Hr-bT-jsw">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="205"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="205" id="5sV-Zc-Qdf"/>
@@ -1801,30 +1816,6 @@
                                             <constraint firstAttribute="height" constant="120" id="IKd-7q-lcB"/>
                                         </constraints>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iSi-l2-SnF">
-                                        <rect key="frame" x="335" y="90" width="48" height="34"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOE-sX-ySM">
-                                                <rect key="frame" x="0.0" y="0.0" width="48" height="34"/>
-                                                <color key="tintColor" systemColor="systemBlueColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="camera.on.rectangle.fill" catalog="system">
-                                                    <attributedString key="attributedTitle"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="bgimgprofile:" destination="nEg-Tt-fqE" eventType="touchUpInside" id="1b1-tO-T6u"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="SOE-sX-ySM" secondAttribute="bottom" id="ElH-Ng-Fvu"/>
-                                            <constraint firstAttribute="height" constant="34" id="Hnl-hT-dXD"/>
-                                            <constraint firstItem="SOE-sX-ySM" firstAttribute="leading" secondItem="iSi-l2-SnF" secondAttribute="leading" id="Ob7-5f-kyo"/>
-                                            <constraint firstItem="SOE-sX-ySM" firstAttribute="top" secondItem="iSi-l2-SnF" secondAttribute="top" id="fLO-nx-a0R"/>
-                                            <constraint firstAttribute="trailing" secondItem="SOE-sX-ySM" secondAttribute="trailing" id="rtK-Qe-9eE"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725496529999996" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1839,20 +1830,17 @@
                                     <constraint firstItem="UOr-Jz-OUf" firstAttribute="leading" secondItem="Fpj-kp-KSP" secondAttribute="leading" constant="80" id="TDU-9E-Vg4"/>
                                     <constraint firstAttribute="trailing" secondItem="v61-ns-xYi" secondAttribute="trailing" constant="8" id="VXF-jL-NPI"/>
                                     <constraint firstItem="Keh-hM-Brq" firstAttribute="top" secondItem="Fpj-kp-KSP" secondAttribute="top" constant="137" id="XOH-5D-YGo"/>
-                                    <constraint firstAttribute="trailing" secondItem="iSi-l2-SnF" secondAttribute="trailing" constant="10" id="YXg-bI-IRe"/>
                                     <constraint firstItem="7Hr-bT-jsw" firstAttribute="leading" secondItem="Fpj-kp-KSP" secondAttribute="leading" id="a1P-ub-1ix"/>
                                     <constraint firstItem="v53-cK-Deb" firstAttribute="leading" secondItem="Fpj-kp-KSP" secondAttribute="leading" id="aCc-31-NzH"/>
                                     <constraint firstItem="7Hr-bT-jsw" firstAttribute="top" secondItem="Fpj-kp-KSP" secondAttribute="top" id="cL6-rN-RaE"/>
                                     <constraint firstItem="jdi-9c-vTZ" firstAttribute="leading" secondItem="UOr-Jz-OUf" secondAttribute="trailing" constant="13" id="e2r-lf-XPA"/>
                                     <constraint firstItem="v53-cK-Deb" firstAttribute="top" secondItem="fFs-17-CbP" secondAttribute="bottom" constant="10" id="f5I-F6-fh5"/>
-                                    <constraint firstItem="iSi-l2-SnF" firstAttribute="leading" secondItem="Fpj-kp-KSP" secondAttribute="leading" constant="335" id="fqA-Hh-zkm"/>
                                     <constraint firstAttribute="trailing" secondItem="Keh-hM-Brq" secondAttribute="trailing" constant="136" id="gSE-GY-p2r"/>
                                     <constraint firstItem="8Vv-xH-bfy" firstAttribute="top" secondItem="Keh-hM-Brq" secondAttribute="bottom" constant="2" id="gUq-n8-BD0"/>
                                     <constraint firstItem="v61-ns-xYi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fFs-17-CbP" secondAttribute="trailing" constant="8" symbolic="YES" id="jFA-lA-4y9"/>
                                     <constraint firstItem="fFs-17-CbP" firstAttribute="top" secondItem="UOr-Jz-OUf" secondAttribute="bottom" constant="30" id="nyA-Wn-N1Q"/>
                                     <constraint firstItem="v61-ns-xYi" firstAttribute="top" secondItem="jdi-9c-vTZ" secondAttribute="bottom" constant="30" id="oWD-Cl-YQU"/>
                                     <constraint firstAttribute="trailing" secondItem="8Vv-xH-bfy" secondAttribute="trailing" constant="20" id="pMQ-nc-uf1"/>
-                                    <constraint firstItem="iSi-l2-SnF" firstAttribute="top" secondItem="Fpj-kp-KSP" secondAttribute="top" constant="90" id="qHu-RR-9uc"/>
                                     <constraint firstItem="fFs-17-CbP" firstAttribute="leading" secondItem="Fpj-kp-KSP" secondAttribute="leading" constant="8" id="rcY-et-WYD"/>
                                     <constraint firstAttribute="trailing" secondItem="vN6-P6-7Um" secondAttribute="trailing" constant="20" id="tiX-7e-mfX"/>
                                     <constraint firstItem="8Vv-xH-bfy" firstAttribute="leading" secondItem="Fpj-kp-KSP" secondAttribute="leading" constant="20" id="ygt-87-soK"/>
@@ -2223,7 +2211,6 @@
         <image name="apple.logo" catalog="system" width="105" height="128"/>
         <image name="bg" width="4480" height="6720"/>
         <image name="camera.circle" catalog="system" width="128" height="123"/>
-        <image name="camera.on.rectangle.fill" catalog="system" width="128" height="98"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="e" width="350" height="200"/>
         <image name="facebook" width="225" height="225"/>
@@ -2247,11 +2234,11 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

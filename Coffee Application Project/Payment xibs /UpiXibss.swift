@@ -9,6 +9,7 @@ import UIKit
 
 class UpiXibss: UITableViewCell {
 
+    @IBOutlet weak var btnPrice: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

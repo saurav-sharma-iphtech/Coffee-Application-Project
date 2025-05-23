@@ -13,6 +13,7 @@ class OptionsTypeCell: UITableViewCell {
     @IBOutlet weak var btnPay: UIButton!
     @IBOutlet weak var bankname: UILabel!
   
+    @IBOutlet weak var btnprice: UIButton!
     @IBOutlet weak var logo: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -35,22 +35,12 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         setImage()
 //        fetchData()
 //        userName.text = userdata.first?.userName
+     
     }
 //
     
-    @IBAction func bgimgprofile(_ sender: UIButton) {
-            
-        print("bgImge Clicked")
-        let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self
-            imagePicker.sourceType = .photoLibrary
-            imagePicker.allowsEditing = true
-            present(imagePicker, animated: true, completion: nil)
-            
-       
-
-        }
-
+    
+   
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         fetchData()
@@ -64,7 +54,17 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
            let savedImage = UIImage(data: imageData) {
             bgImage.image = savedImage
         }
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+               bgImage.addGestureRecognizer(tapGesture)
+               bgImage.isUserInteractionEnabled = true
     }
+    @objc func imageTapped() {
+            let picker = UIImagePickerController()
+            picker.delegate = self
+            picker.sourceType = .photoLibrary
+            picker.allowsEditing = true
+            present(picker, animated: true, completion: nil)
+        }
     
     @IBAction func editProfileBtn(_ sender: UIButton) {
         let data = userdata.first

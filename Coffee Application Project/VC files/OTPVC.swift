@@ -11,7 +11,8 @@ import CoreData
 
 class OTPVC: UIViewController,UITextFieldDelegate {
 
-    
+    var generateotp: String = "" 
+    @IBOutlet weak var otpLbl: UILabel!
     @IBOutlet weak var phoneNolbl: UILabel!
     @IBOutlet weak var OTPTxt1: UITextField!
     @IBOutlet weak var OTPTxt2: UITextField!
@@ -37,7 +38,8 @@ class OTPVC: UIViewController,UITextFieldDelegate {
         OTPTxt4.delegate = self
         
         self.navigationItem.hidesBackButton = true
-        phoneNolbl.text = enterdNo 
+        phoneNolbl.text = enterdNo
+        otpLbl.text = "Your OTP is: \(String(describing: recevedOtp))"
     }
     
     
@@ -53,7 +55,7 @@ class OTPVC: UIViewController,UITextFieldDelegate {
         showAlert(message: "OTP Successfully Send")
         newGeneratedOTP = Int.random(in: 1000...9999)
         print(" New Generated OTP: \(newGeneratedOTP ?? 0)")
-        
+        self.otpLbl.text = "Your OTP is: \(String(describing: newGeneratedOTP))"
         resend = true
        clearForm()
         
