@@ -24,4 +24,10 @@
         <attribute name="pincode" optional="YES" attributeType="String"/>
         <attribute name="state" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="UserDetails" representedClassName="UserDetails" syncable="YES">
+        <attribute name="userEmailid" optional="YES" attributeType="String"/>
+        <attribute name="userGendar" optional="YES" attributeType="String"/>
+        <attribute name="userName" optional="YES" attributeType="String"/>
+        <attribute name="userPhoneNo" optional="YES" attributeType="String"/>
+    </entity>
 </model>

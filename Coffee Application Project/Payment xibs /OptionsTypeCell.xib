@@ -21,7 +21,7 @@
                         <rect key="frame" x="10" y="10" width="300" height="113"/>
                         <subviews>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State Bank of India" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGg-ru-gYG">
-                                <rect key="frame" x="40" y="10" width="210" height="30"/>
+                                <rect key="frame" x="40" y="15" width="210" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="NKk-bk-gfl"/>
@@ -31,14 +31,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sbi" translatesAutoresizingMaskIntoConstraints="NO" id="Goq-fk-L2R">
-                                <rect key="frame" x="250" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="250" y="5" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="BW0-6k-jxx"/>
                                     <constraint firstAttribute="height" constant="50" id="gFK-wA-Izn"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6d-J9-eZC">
-                                <rect key="frame" x="40" y="60" width="250" height="40"/>
+                                <rect key="frame" x="40" y="65" width="250" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="krE-6C-fEL"/>
                                 </constraints>
@@ -55,10 +55,10 @@
                         <constraints>
                             <constraint firstItem="D6d-J9-eZC" firstAttribute="leading" secondItem="SdE-Ip-Vuh" secondAttribute="leading" constant="40" id="E3X-0M-yIZ"/>
                             <constraint firstItem="D6d-J9-eZC" firstAttribute="top" secondItem="Goq-fk-L2R" secondAttribute="bottom" constant="10" id="LQd-XK-Oxc"/>
-                            <constraint firstItem="Goq-fk-L2R" firstAttribute="top" secondItem="SdE-Ip-Vuh" secondAttribute="top" id="T9F-7f-jZC"/>
+                            <constraint firstItem="Goq-fk-L2R" firstAttribute="top" secondItem="SdE-Ip-Vuh" secondAttribute="top" constant="5" id="T9F-7f-jZC"/>
                             <constraint firstItem="Goq-fk-L2R" firstAttribute="leading" secondItem="QGg-ru-gYG" secondAttribute="trailing" id="gNP-ku-TPV"/>
                             <constraint firstItem="QGg-ru-gYG" firstAttribute="leading" secondItem="SdE-Ip-Vuh" secondAttribute="leading" constant="40" id="lbx-Y9-yGE"/>
-                            <constraint firstItem="QGg-ru-gYG" firstAttribute="top" secondItem="SdE-Ip-Vuh" secondAttribute="top" constant="10" id="tpU-gg-oQn"/>
+                            <constraint firstItem="QGg-ru-gYG" firstAttribute="top" secondItem="SdE-Ip-Vuh" secondAttribute="top" constant="15" id="tpU-gg-oQn"/>
                             <constraint firstAttribute="trailing" secondItem="Goq-fk-L2R" secondAttribute="trailing" id="uWD-P6-aZo"/>
                             <constraint firstAttribute="trailing" secondItem="D6d-J9-eZC" secondAttribute="trailing" constant="10" id="uXs-jM-0hk"/>
                         </constraints>

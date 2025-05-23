@@ -11,6 +11,12 @@
 		020DCA782DD4B6530029C4B6 /* CoffeeLCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 020DCA762DD4B6530029C4B6 /* CoffeeLCVC.xib */; };
 		020DCA7B2DD4CB8D0029C4B6 /* OffersCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020DCA792DD4CB8D0029C4B6 /* OffersCVC.swift */; };
 		020DCA7C2DD4CB8D0029C4B6 /* OffersCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 020DCA7A2DD4CB8D0029C4B6 /* OffersCVC.xib */; };
+		020E89972DE0806B003BD672 /* cardxibs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020E89952DE0806B003BD672 /* cardxibs.swift */; };
+		020E89982DE0806B003BD672 /* cardxibs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 020E89962DE0806B003BD672 /* cardxibs.xib */; };
+		020E899B2DE08112003BD672 /* QrandCashOnDeliveryXibs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020E89992DE08112003BD672 /* QrandCashOnDeliveryXibs.swift */; };
+		020E899C2DE08112003BD672 /* QrandCashOnDeliveryXibs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 020E899A2DE08112003BD672 /* QrandCashOnDeliveryXibs.xib */; };
+		020E899F2DE091C8003BD672 /* UpiXibss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020E899D2DE091C8003BD672 /* UpiXibss.swift */; };
+		020E89A02DE091C8003BD672 /* UpiXibss.xib in Resources */ = {isa = PBXBuildFile; fileRef = 020E899E2DE091C8003BD672 /* UpiXibss.xib */; };
 		022E4E9A2DC9D95000D90D2B /* CountryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022E4E992DC9D95000D90D2B /* CountryVC.swift */; };
 		022E4E9E2DC9DA5500D90D2B /* CountryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022E4E9C2DC9DA5500D90D2B /* CountryViewCell.swift */; };
 		022E4E9F2DC9DA5500D90D2B /* CountryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022E4E9D2DC9DA5500D90D2B /* CountryViewCell.xib */; };
@@ -55,6 +61,9 @@
 		029D833A2DC35CEF00E67D9C /* Coffee_Application_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D83392DC35CEF00E67D9C /* Coffee_Application_ProjectUITestsLaunchTests.swift */; };
 		029D83482DC35DDE00E67D9C /* Loading Page VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D83472DC35DDE00E67D9C /* Loading Page VC.swift */; };
 		029D834A2DC35E0E00E67D9C /* LoginPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D83492DC35E0E00E67D9C /* LoginPageVC.swift */; };
+		02D08D452DE037C900796AFD /* ProfiledetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D08D442DE037C900796AFD /* ProfiledetailsVC.swift */; };
+		02D08D492DE03BA900796AFD /* UserDetails+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D08D472DE03BA900796AFD /* UserDetails+CoreDataClass.swift */; };
+		02D08D4A2DE03BA900796AFD /* UserDetails+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D08D482DE03BA900796AFD /* UserDetails+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +88,12 @@
 		020DCA762DD4B6530029C4B6 /* CoffeeLCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeLCVC.xib; sourceTree = "<group>"; };
 		020DCA792DD4CB8D0029C4B6 /* OffersCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCVC.swift; sourceTree = "<group>"; };
 		020DCA7A2DD4CB8D0029C4B6 /* OffersCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OffersCVC.xib; sourceTree = "<group>"; };
+		020E89952DE0806B003BD672 /* cardxibs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardxibs.swift; sourceTree = "<group>"; };
+		020E89962DE0806B003BD672 /* cardxibs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cardxibs.xib; sourceTree = "<group>"; };
+		020E89992DE08112003BD672 /* QrandCashOnDeliveryXibs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrandCashOnDeliveryXibs.swift; sourceTree = "<group>"; };
+		020E899A2DE08112003BD672 /* QrandCashOnDeliveryXibs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QrandCashOnDeliveryXibs.xib; sourceTree = "<group>"; };
+		020E899D2DE091C8003BD672 /* UpiXibss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpiXibss.swift; sourceTree = "<group>"; };
+		020E899E2DE091C8003BD672 /* UpiXibss.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpiXibss.xib; sourceTree = "<group>"; };
 		022E4E992DC9D95000D90D2B /* CountryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryVC.swift; sourceTree = "<group>"; };
 		022E4E9C2DC9DA5500D90D2B /* CountryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewCell.swift; sourceTree = "<group>"; };
 		022E4E9D2DC9DA5500D90D2B /* CountryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryViewCell.xib; sourceTree = "<group>"; };
@@ -103,8 +118,8 @@
 		0284E50B2DD5B35F00582E52 /* OrderedCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedCVC.swift; sourceTree = "<group>"; };
 		0284E50C2DD5B35F00582E52 /* OrderedCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderedCVC.xib; sourceTree = "<group>"; };
 		0284E50F2DD600DE00582E52 /* CoffeeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailVC.swift; sourceTree = "<group>"; };
-		028884752DDEFB2B008A18FD /* OrdersPrice+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrdersPrice+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		028884762DDEFB2B008A18FD /* OrdersPrice+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrdersPrice+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		028884752DDEFB2B008A18FD /* OrdersPrice+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "OrdersPrice+CoreDataClass.swift"; path = "Coffee Application Project/NSFiles/Orders Details/OrdersPrice+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		028884762DDEFB2B008A18FD /* OrdersPrice+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "OrdersPrice+CoreDataProperties.swift"; path = "Coffee Application Project/NSFiles/Orders Details/OrdersPrice+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		028884A52DDF300D008A18FD /* OptionsTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTypeCell.swift; sourceTree = "<group>"; };
 		028884A62DDF300D008A18FD /* OptionsTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsTypeCell.xib; sourceTree = "<group>"; };
 		0289A7F62DC3ABDE00F9E1C9 /* CartPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPageVC.swift; sourceTree = "<group>"; };
@@ -127,6 +142,9 @@
 		029D83392DC35CEF00E67D9C /* Coffee_Application_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_Application_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		029D83472DC35DDE00E67D9C /* Loading Page VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Loading Page VC.swift"; sourceTree = "<group>"; };
 		029D83492DC35E0E00E67D9C /* LoginPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageVC.swift; sourceTree = "<group>"; };
+		02D08D442DE037C900796AFD /* ProfiledetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfiledetailsVC.swift; sourceTree = "<group>"; };
+		02D08D472DE03BA900796AFD /* UserDetails+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UserDetails+CoreDataClass.swift"; path = "Coffee Application Project/NSFiles/Profile Details/UserDetails+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		02D08D482DE03BA900796AFD /* UserDetails+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UserDetails+CoreDataProperties.swift"; path = "Coffee Application Project/NSFiles/Profile Details/UserDetails+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +195,8 @@
 		0230F16C2DDC6769007D10FB /* Orders Details */ = {
 			isa = PBXGroup;
 			children = (
+				028884762DDEFB2B008A18FD /* OrdersPrice+CoreDataProperties.swift */,
+				028884752DDEFB2B008A18FD /* OrdersPrice+CoreDataClass.swift */,
 			);
 			path = "Orders Details";
 			sourceTree = "<group>";
@@ -186,10 +206,16 @@
 			children = (
 				0230F16E2DDC67DB007D10FB /* PaymentOptionCell.swift */,
 				0230F16F2DDC67DB007D10FB /* PaymentOptionCell.xib */,
+				020E89952DE0806B003BD672 /* cardxibs.swift */,
 				0253316F2DDDA74A0050700D /* AddressCellXib.swift */,
 				025331702DDDA74A0050700D /* AddressCellXib.xib */,
 				028884A52DDF300D008A18FD /* OptionsTypeCell.swift */,
 				028884A62DDF300D008A18FD /* OptionsTypeCell.xib */,
+				020E89962DE0806B003BD672 /* cardxibs.xib */,
+				020E89992DE08112003BD672 /* QrandCashOnDeliveryXibs.swift */,
+				020E899A2DE08112003BD672 /* QrandCashOnDeliveryXibs.xib */,
+				020E899D2DE091C8003BD672 /* UpiXibss.swift */,
+				020E899E2DE091C8003BD672 /* UpiXibss.xib */,
 			);
 			path = "Payment xibs ";
 			sourceTree = "<group>";
@@ -232,8 +258,7 @@
 		0294C8D02DDAECFE003C8C1D /* NSFiles */ = {
 			isa = PBXGroup;
 			children = (
-				028884752DDEFB2B008A18FD /* OrdersPrice+CoreDataClass.swift */,
-				028884762DDEFB2B008A18FD /* OrdersPrice+CoreDataProperties.swift */,
+				02D08D462DE03B7500796AFD /* Profile Details */,
 				025331732DDDAE140050700D /* Address Details */,
 				0230F16C2DDC6769007D10FB /* Orders Details */,
 				0230F16B2DDC6749007D10FB /* Cart Details */,
@@ -312,8 +337,18 @@
 				0284E50F2DD600DE00582E52 /* CoffeeDetailVC.swift */,
 				0230F1692DDC65D4007D10FB /* PaymentVC.swift */,
 				0296E0B42DDD9AD40015F9A4 /* AddressVC.swift */,
+				02D08D442DE037C900796AFD /* ProfiledetailsVC.swift */,
 			);
 			path = "VC files";
+			sourceTree = "<group>";
+		};
+		02D08D462DE03B7500796AFD /* Profile Details */ = {
+			isa = PBXGroup;
+			children = (
+				02D08D482DE03BA900796AFD /* UserDetails+CoreDataProperties.swift */,
+				02D08D472DE03BA900796AFD /* UserDetails+CoreDataClass.swift */,
+			);
+			path = "Profile Details";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,13 +461,16 @@
 				02465AF82DD37FCC00408FF9 /* ButtonViewCell.xib in Resources */,
 				029D83202DC35CEE00E67D9C /* Assets.xcassets in Resources */,
 				02465AF22DD3713400408FF9 /* HomeFirstCollectionViewCell.xib in Resources */,
+				020E89A02DE091C8003BD672 /* UpiXibss.xib in Resources */,
 				0230F1712DDC67DB007D10FB /* PaymentOptionCell.xib in Resources */,
 				029D831B2DC35CEB00E67D9C /* Main.storyboard in Resources */,
 				028884A82DDF300D008A18FD /* OptionsTypeCell.xib in Resources */,
 				022E4E9F2DC9DA5500D90D2B /* CountryViewCell.xib in Resources */,
+				020E899C2DE08112003BD672 /* QrandCashOnDeliveryXibs.xib in Resources */,
 				0284E50E2DD5B35F00582E52 /* OrderedCVC.xib in Resources */,
 				02429B3B2DD35365001DFC05 /* CartViewCell.xib in Resources */,
 				020DCA782DD4B6530029C4B6 /* CoffeeLCVC.xib in Resources */,
+				020E89982DE0806B003BD672 /* cardxibs.xib in Resources */,
 				020DCA7C2DD4CB8D0029C4B6 /* OffersCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +497,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				022E4E9A2DC9D95000D90D2B /* CountryVC.swift in Sources */,
+				02D08D452DE037C900796AFD /* ProfiledetailsVC.swift in Sources */,
 				025331762DDDAE3A0050700D /* UserAddress+CoreDataClass.swift in Sources */,
 				029D831E2DC35CEB00E67D9C /* Coffee_Application_Project.xcdatamodeld in Sources */,
 				02465AF12DD3713400408FF9 /* HomeFirstCollectionViewCell.swift in Sources */,
@@ -468,6 +507,7 @@
 				0289A7F72DC3ABDE00F9E1C9 /* CartPageVC.swift in Sources */,
 				0230F16A2DDC65D4007D10FB /* PaymentVC.swift in Sources */,
 				02465AF42DD374C500408FF9 /* HomePageVC.swift in Sources */,
+				020E899B2DE08112003BD672 /* QrandCashOnDeliveryXibs.swift in Sources */,
 				0296E0B52DDD9AD40015F9A4 /* AddressVC.swift in Sources */,
 				028884772DDEFB2B008A18FD /* OrdersPrice+CoreDataClass.swift in Sources */,
 				0284E5102DD600DE00582E52 /* CoffeeDetailVC.swift in Sources */,
@@ -475,16 +515,20 @@
 				0284E5092DD5A6FB00582E52 /* PostsCVC.swift in Sources */,
 				02465AF72DD37FCC00408FF9 /* ButtonViewCell.swift in Sources */,
 				029D83182DC35CEB00E67D9C /* ViewController.swift in Sources */,
+				020E89972DE0806B003BD672 /* cardxibs.swift in Sources */,
 				029D83142DC35CEB00E67D9C /* AppDelegate.swift in Sources */,
+				02D08D492DE03BA900796AFD /* UserDetails+CoreDataClass.swift in Sources */,
 				0294C8DC2DDB30B6003C8C1D /* CartDetails+CoreDataProperties.swift in Sources */,
 				022E4E9E2DC9DA5500D90D2B /* CountryViewCell.swift in Sources */,
 				028396462DC3A90E008415C0 /* OTPVC.swift in Sources */,
+				020E899F2DE091C8003BD672 /* UpiXibss.swift in Sources */,
 				029D83482DC35DDE00E67D9C /* Loading Page VC.swift in Sources */,
 				020DCA772DD4B6530029C4B6 /* CoffeeLCVC.swift in Sources */,
 				028884A72DDF300D008A18FD /* OptionsTypeCell.swift in Sources */,
 				02429B3A2DD35365001DFC05 /* CartViewCell.swift in Sources */,
 				02935F6C2DD1D8DF00B25ED4 /* ProfileVC.swift in Sources */,
 				025331772DDDAE3A0050700D /* UserAddress+CoreDataProperties.swift in Sources */,
+				02D08D4A2DE03BA900796AFD /* UserDetails+CoreDataProperties.swift in Sources */,
 				029D834A2DC35E0E00E67D9C /* LoginPageVC.swift in Sources */,
 				0230F1702DDC67DB007D10FB /* PaymentOptionCell.swift in Sources */,
 				02429B3D2DD359A8001DFC05 /* SceneDelegate.swift in Sources */,
@@ -673,6 +717,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -701,6 +746,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

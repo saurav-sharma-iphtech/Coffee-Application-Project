@@ -7,6 +7,7 @@
 
 import UIKit
 import MessageUI
+import CoreData
 
 class OTPVC: UIViewController,UITextFieldDelegate {
 
@@ -24,11 +25,11 @@ class OTPVC: UIViewController,UITextFieldDelegate {
     var enterdNo :String = ""
     
     var isLoggedIn :Bool = false
-    
+    var userdata :[UserDetails] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        fetchData()
         
         OTPTxt1.delegate = self
         OTPTxt2.delegate = self
@@ -72,7 +73,12 @@ class OTPVC: UIViewController,UITextFieldDelegate {
                 return
             }
             clearForm()
-            navigationPage()
+            if userdata.isEmpty{
+                navigateToProfiledetailPage()
+            }
+            else{
+                navigationToHomePage()
+            }
         }
         else{
             let one = OTPTxt1.text ?? ""
@@ -86,7 +92,12 @@ class OTPVC: UIViewController,UITextFieldDelegate {
                 return
             }
             clearForm()
-            navigationPage()
+            if userdata.isEmpty{
+                navigateToProfiledetailPage()
+            }
+            else{
+                navigationToHomePage()
+            }
         }
         
     }
@@ -104,19 +115,36 @@ extension OTPVC{
         present(alert, animated: true)
         
     }
+    func navigateToProfiledetailPage(){
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if  let vc = storyboard.instantiateViewController(withIdentifier: "ProfiledetailsVC") as? ProfiledetailsVC {
+                
+                
+                navigationController?.pushViewController(vc, animated: true)
+            }
+    }
     
-//    Navigate Page One VC to Another VC
-//    func navigationPage(){
-//        UserDefaults.standard.setValue(true, forKey:"accessTokenKey" )
-//       print(" button was tappedd")
-//        if let homePageNavigate = storyboard?.instantiateViewController(withIdentifier: "UITabBarController") as? UITabBarController{
-//            homePageNavigate.navigationItem.hidesBackButton = true
-//           navigationController?.pushViewController(homePageNavigate, animated:true)
-//        }
-//
-//    }
+    func fetchData(){
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<UserDetails>(entityName: "UserDetails")
+        
+        fetchRequest.returnsObjectsAsFaults = false
+        do{
+            let user = try managedContext.fetch(fetchRequest)
+            
+            userdata = user
+          
+            debugPrint(user)
+        }catch let error as NSError {
+            debugPrint(error)
+        }
+        
+    }
     
-    func navigationPage() {
+    func navigationToHomePage() {
         // Save login state
         UserDefaults.standard.set(true, forKey: "accessTokenKey")
         

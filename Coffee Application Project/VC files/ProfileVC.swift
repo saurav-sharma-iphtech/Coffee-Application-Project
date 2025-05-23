@@ -1,11 +1,19 @@
 
 
 import UIKit
+import CoreData
 
 class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,
-UICollectionViewDelegateFlowLayout{
-
+                 UICollectionViewDelegateFlowLayout, ProfileImageDelegate,
+                 UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    func didSelectProfileImage(_ image: UIImage) {
+        imgProfile.image = image
+    }
     
+    @IBOutlet weak var bgImage: UIImageView!
+    
+    @IBOutlet weak var userName: UILabel!
+
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button: UIButton!
     let arrbuttonName = ["a","b","c","d","e","f","g","h","last"]
@@ -13,6 +21,7 @@ UICollectionViewDelegateFlowLayout{
        case Posts
        case Ordered
     }
+    var userdata :[UserDetails] = []
     var currentMode : DisplayMode = .Posts
     
     @IBOutlet weak var postsOrderView: UICollectionView!
@@ -24,9 +33,49 @@ UICollectionViewDelegateFlowLayout{
         setImage()
         setUpView()
         setImage()
-     
+//        fetchData()
+//        userName.text = userdata.first?.userName
+    }
+//
+    
+    @IBAction func bgimgprofile(_ sender: UIButton) {
+            
+        print("bgImge Clicked")
+        let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .photoLibrary
+            imagePicker.allowsEditing = true
+            present(imagePicker, animated: true, completion: nil)
+            
+       
+
+        }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        fetchData()
+        userName.text = userdata.first?.userName
+        
+        if let imageData = UserDefaults.standard.data(forKey: "profileImage"),
+           let savedImage = UIImage(data: imageData) {
+            imgProfile.image = savedImage
+        }
+        if let imageData = UserDefaults.standard.data(forKey: "bgImage"),
+           let savedImage = UIImage(data: imageData) {
+            bgImage.image = savedImage
+        }
     }
     
+    @IBAction func editProfileBtn(_ sender: UIButton) {
+        let data = userdata.first
+        let storybord = UIStoryboard(name: "Main", bundle: nil)
+        if let vc = storybord.instantiateViewController(withIdentifier: "ProfiledetailsVC") as? ProfiledetailsVC{
+            vc.exitingData = data
+            vc.delegate = self
+            vc.isEditMode = true
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     
     @IBAction func logoutJustEample(_ sender: UIButton) {
         // 1. Clear login state
@@ -129,3 +178,47 @@ extension ProfileVC{
         }
     }
 }
+
+extension ProfileVC{
+    func fetchData(){
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<UserDetails>(entityName: "UserDetails")
+        
+        fetchRequest.returnsObjectsAsFaults = false
+        do{
+            let user = try managedContext.fetch(fetchRequest)
+            
+            self.userdata = user
+            
+            debugPrint(user)
+        }catch let error as NSError {
+            debugPrint(error)
+        }
+        
+    }
+}
+
+extension ProfileVC{
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        if let editedImage = info[.editedImage] as? UIImage {
+            bgImage.image = editedImage
+            saveImageToUserDefaults(image: editedImage)
+        } else if let originalImage = info[.originalImage] as? UIImage {
+            bgImage.image = originalImage
+            saveImageToUserDefaults(image: originalImage)
+        }
+    }
+
+    func saveImageToUserDefaults(image: UIImage) {
+        if let imageData = image.jpegData(compressionQuality: 0.8) {
+            UserDefaults.standard.set(imageData, forKey: "bgImage")
+        }
+    }
+
+}
+
